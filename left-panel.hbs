@@ -1,0 +1,52 @@
+<div class="scrolling-area">
+  <div class="header">
+    {{user-box user=App.currentUser
+        showDisplayName=App.currentUser.sexyProfileUrl}}
+     <div class="close-btn">{{#linkTo "noSuchPage"}}<img src="../img/icons/Icon-228x.png" />{{/linkTo}}</div>
+  </div>
+
+  <ul class="nav nav-list">
+    
+    <li class="nav-header">{{App.currentUser.displayName}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/Profile-Icon07.svg" /></div>{{#linkTo "users.me"}}Profile{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/feedback-icon.svg" /></div>{{#linkTo "noSuchPage"}}Give Feedback{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/request-feedback.svg" /></div>{{#linkTo "noSuchPage"}}Request Feedback{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/friends-01.svg" /></div>{{#linkTo "noSuchPage"}}Friends{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/App-Settings01.svg" /></div>{{#linkTo "noSuchPage"}}Settings{{/linkTo}}</li>
+    <li class="nav-icon no-border-lst"><div><img src="../img/icons/upgrade-Icon08.svg" /></div>{{#linkTo "noSuchPage"}}Special Features{{/linkTo}}</li>
+    <li class="nav-header">More</li>
+    <li class="nav-icon"><div><img src="../img/icons/help.svg" /></div>{{#linkTo "noSuchPage"}}Help{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/panomira-logo" /></div>{{#linkTo "noSuchPage"}}About{{/linkTo}}</li>
+    <li class="nav-icon no-border-lst"><div><img src="../img/icons/LogOut02" /></div>{{#linkTo "logout"}}Log Out{{/linkTo}}</li>
+    
+    
+  <!--  <li class="nav-header">Friends</li>
+    <li class="nav-icon"><div><img src="../img/icons/Search-Icon02.svg" /></div>{{#linkTo "noSuchPage"}}Search{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/Invite-Icon10.svg" /></div>{{#linkTo "noSuchPage"}}Invite{{/linkTo}}</li>
+    <li class="nav-icon no-border-lst"><div><img src="../img/icons/Manage-Icon09.svg" /></div>{{#linkTo "noSuchPage"}}Manage{{/linkTo}}</li>
+
+    <li class="nav-header">Support</li>
+    <li class="nav-icon"><div><img src="../img/icons/FAQ09.svg" /></div>{{#linkTo "about.faq"}}FAQ{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/Tutorial03 .svg" /></div>{{#linkTo "about.tutorial"}}Tutorial{{/linkTo}}</li>
+    <li class="nav-icon no-border-lst"><div><img src="../img/icons/Video03.svg" /></div>{{#linkTo "about.video"}}Video{{/linkTo}}</li>
+
+    <li class="nav-header">Settings</li>
+    <li class="nav-icon"><div><img src="../img/icons/Upgrade-Icon08.svg" /></div>{{#linkTo "noSuchPage"}}Upgrade{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/Privacy02.svg" /></div>{{#linkTo "noSuchPage"}}Privacy{{/linkTo}}</li>
+    <li class="nav-icon"><div><img src="../img/icons/App-Settings01.svg" /></div>{{#linkTo "noSuchPage"}}App{{/linkTo}}</li>
+    <li class="nav-icon no-border-lst"><div><img src="../img/icons/LogOut02" /></div>{{#linkTo "logout"}}Log Out{{/linkTo}}</li>
+
+    <li class="nav-header">About</li>
+    <li class="nav-icon"><div><img src="../img/icons/Icon-228x.png" /></div>{{#linkTo "about.panomira"}}Panomira{{/linkTo}}</li>
+    <li>{{#linkTo "about.sovolve"}}Sovolve{{/linkTo}}</li>-->
+    
+  </ul>
+</div>
+<div class="footer">
+  <div class="content text-center">
+    <small class="muted">
+      Rev: {{App.config.shortRevision}} ({{App.config.branch}})
+      <br>Build date: {{formatted-date value=App.config.builtAt}}
+    </small>
+  </div>
+</div>
